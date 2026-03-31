@@ -4,9 +4,32 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>everythingOS</title>
-  <link rel="stylesheet" href="../style/style.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    #galaxy-browser-link {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      z-index: 100;
+      background: linear-gradient(135deg, #ffd700, #ff8c00);
+      color: #000;
+      font-weight: bold;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      font-size: 14px;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 24px;
+      box-shadow: 0 0 18px rgba(255,215,0,0.45);
+      transition: opacity 0.2s, transform 0.1s;
+    }
+    #galaxy-browser-link:hover {
+      opacity: 0.9;
+      transform: scale(1.05);
+    }
+  </style>
 </head>
 <body>
-  <script type="module" src="../src/main.js"></script>
+  <a id="galaxy-browser-link" href="galaxy-browser/index.html">🌌 Galaxy Browser</a>
+  <script type="module" src="main.js"></script>
 </body>
 </html>
